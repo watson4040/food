@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rashmy's Food | Delicious Meals in Lusaka</title>
+    <title>Rashmy's Food | Shawarma, Cakes & Chapati | Lusaka</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -22,7 +22,7 @@
             color: #2d2d2d;
             scroll-padding-top: 80px;
         }
-        /* Navbar */
+        /* Navbar with wider brand spacing */
         .navbar {
             background: #ffffff;
             box-shadow: 0 2px 15px rgba(0,0,0,0.08);
@@ -32,9 +32,12 @@
             font-weight: 800;
             font-size: 1.7rem;
             color: #e67e22 !important;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
         }
         .navbar-brand span {
             color: #2c3e50;
+            letter-spacing: inherit;
         }
         .nav-link {
             font-weight: 600;
@@ -47,7 +50,7 @@
         }
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80');
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
             background-size: cover;
             background-position: center;
             min-height: 90vh;
@@ -60,6 +63,7 @@
             font-size: 3.5rem;
             font-weight: 800;
             margin-bottom: 1rem;
+            letter-spacing: 1px;
         }
         .hero p {
             font-size: 1.2rem;
@@ -124,6 +128,7 @@
             height: 200px;
             object-fit: cover;
             width: 100%;
+            background-color: #f0e6df;
         }
         .menu-body {
             padding: 1.2rem;
@@ -144,11 +149,6 @@
             padding: 2rem;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             height: 100%;
-        }
-        .contact-form input, .contact-form textarea {
-            border-radius: 12px;
-            border: 1px solid #ddd;
-            padding: 12px;
         }
         .whatsapp-float {
             position: fixed;
@@ -180,6 +180,7 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .section-title { font-size: 1.8rem; }
+            .navbar-brand { font-size: 1.4rem; letter-spacing: 1px; word-spacing: 4px; }
         }
     </style>
 </head>
@@ -206,99 +207,99 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1>Welcome to Rashmy's Food</h1>
-            <p>Authentic Zambian & International Cuisine • Fresh • Tasty • Delivered to your door</p>
-            <a href="https://wa.me/260964173406?text=Hello%20Rashmy%27s%20Food%2C%20I%20want%20to%20place%20an%20order%21" class="btn btn-order me-2" target="_blank"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+            <h1>Rashmy's Food</h1>
+            <p>Authentic Shawarma • Fresh Cakes • Soft Chapati • Delivered to your door</p>
+            <a href="https://wa.me/260964173406?text=Hello%20Rashmy's%20Food%2C%20I%20want%20to%20place%20an%20order" class="btn btn-order me-2" target="_blank"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
             <a href="#menu" class="btn btn-menu">View Menu</a>
         </div>
     </section>
 
-    <!-- Menu Section -->
+    <!-- Menu Section (Shawarma, Cakes, Chapati) -->
     <section id="menu" class="py-5">
         <div class="container">
-            <h2 class="section-title">Our Signature Dishes</h2>
+            <h2 class="section-title">Our Specialties</h2>
             <div class="row">
-                <!-- Menu Item 1 -->
+                <!-- Chicken Shawarma -->
                 <div class="col-md-4">
                     <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=580&q=80" class="menu-img" alt="Grilled Chicken">
+                        <img src="https://images.pexels.com/photos/27398304/pexels-photo-27398304.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="menu-img" alt="Chicken Shawarma">
                         <div class="menu-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="menu-title">Grilled Peri-Peri Chicken</h5>
-                                <span class="menu-price">K85</span>
+                                <h5 class="menu-title">Chicken Shawarma</h5>
+                                <span class="menu-price">K50</span>
                             </div>
-                            <p class="text-muted small">Spicy grilled chicken served with nshima or chips.</p>
-                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Grilled%20Peri-Peri%20Chicken" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
+                            <p class="text-muted small">Grilled chicken, garlic sauce, pickles, wrapped in fresh pita.</p>
+                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Chicken%20Shawarma" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
                         </div>
                     </div>
                 </div>
-                <!-- Menu Item 2 -->
+                <!-- Beef Shawarma -->
                 <div class="col-md-4">
                     <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=580&q=80" class="menu-img" alt="Beef Burger">
+                        <img src="https://images.pexels.com/photos/27424293/pexels-photo-27424293.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="menu-img" alt="Beef Shawarma">
                         <div class="menu-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="menu-title">Classic Beef Burger</h5>
+                                <h5 class="menu-title">Beef Shawarma</h5>
+                                <span class="menu-price">K55</span>
+                            </div>
+                            <p class="text-muted small">Spiced beef, tahini sauce, fresh veggies.</p>
+                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Beef%20Shawarma" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Chapati -->
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="https://images.pexels.com/photos/6133559/pexels-photo-6133559.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="menu-img" alt="Soft Chapati">
+                        <div class="menu-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu-title">Soft Chapati</h5>
+                                <span class="menu-price">K15</span>
+                            </div>
+                            <p class="text-muted small">Freshly made, soft layered chapati – perfect with tea or curry.</p>
+                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Soft%20Chapati" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chocolate Cake -->
+                <div class="col-md-4">
+                    <div class="menu-card">
+                        <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="menu-img" alt="Chocolate Cake">
+                        <div class="menu-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="menu-title">Chocolate Cake</h5>
                                 <span class="menu-price">K70</span>
                             </div>
-                            <p class="text-muted small">100% beef patty, cheese, lettuce, tomato, and special sauce.</p>
-                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Classic%20Beef%20Burger" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
+                            <p class="text-muted small">Rich, moist chocolate cake with ganache.</p>
+                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Chocolate%20Cake" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
                         </div>
                     </div>
                 </div>
-                <!-- Menu Item 3 -->
+                <!-- Vanilla Cake -->
                 <div class="col-md-4">
                     <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=580&q=80" class="menu-img" alt="Vegetarian Pizza">
+                        <img src="https://images.pexels.com/photos/1126240/pexels-photo-1126240.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="menu-img" alt="Vanilla Cake">
                         <div class="menu-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="menu-title">Vegetarian Pizza</h5>
-                                <span class="menu-price">K95</span>
-                            </div>
-                            <p class="text-muted small">Mushrooms, bell peppers, olives, mozzarella.</p>
-                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Vegetarian%20Pizza" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Menu Item 4 -->
-                <div class="col-md-4">
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1585109649139-3667c35e2b1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=580&q=80" class="menu-img" alt="Fish & Chips">
-                        <div class="menu-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="menu-title">Fish & Chips</h5>
-                                <span class="menu-price">K80</span>
-                            </div>
-                            <p class="text-muted small">Fresh tilapia fillet, crispy fries, tartar sauce.</p>
-                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Fish%20%26%20Chips" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Menu Item 5 -->
-                <div class="col-md-4">
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&auto=format&fit=crop&w=580&q=80" class="menu-img" alt="Nshima with Kapenta">
-                        <div class="menu-body">
-                            <div class="d-flex justify-content-between">
-                                <h5 class="menu-title">Nshima with Kapenta</h5>
+                                <h5 class="menu-title">Vanilla Cake</h5>
                                 <span class="menu-price">K60</span>
                             </div>
-                            <p class="text-muted small">Traditional Zambian meal – nshima, dried kapenta, and vegetables.</p>
-                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Nshima%20with%20Kapenta" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
+                            <p class="text-muted small">Classic vanilla sponge with buttercream.</p>
+                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Vanilla%20Cake" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
                         </div>
                     </div>
                 </div>
-                <!-- Menu Item 6 -->
+                <!-- Chapati Wrap (Shawarma Style) -->
                 <div class="col-md-4">
                     <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=580&q=80" class="menu-img" alt="Chocolate Cake">
+                        <img src="https://images.pexels.com/photos/27424297/pexels-photo-27424297.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="menu-img" alt="Chapati Wrap">
                         <div class="menu-body">
                             <div class="d-flex justify-content-between">
-                                <h5 class="menu-title">Chocolate Lava Cake</h5>
+                                <h5 class="menu-title">Chapati Wrap (Shawarma Style)</h5>
                                 <span class="menu-price">K45</span>
                             </div>
-                            <p class="text-muted small">Warm chocolate cake with molten center, served with ice cream.</p>
-                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Chocolate%20Lava%20Cake" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
+                            <p class="text-muted small">Shawarma filling wrapped in soft chapati.</p>
+                            <a href="https://wa.me/260964173406?text=I'd%20like%20to%20order%20Chapati%20Wrap" class="btn btn-sm btn-outline-success">Order via WhatsApp</a>
                         </div>
                     </div>
                 </div>
@@ -306,7 +307,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (updated) -->
     <section id="about" class="py-5 bg-light">
         <div class="container">
             <div class="row align-items-center">
@@ -314,14 +315,14 @@
                     <div class="info-card">
                         <i class="fas fa-utensils fa-3x" style="color:#e67e22;"></i>
                         <h3 class="mt-3">About Rashmy's Food</h3>
-                        <p>Rashmy's Food started as a small family kitchen in Lusaka, serving authentic homemade meals. Today, we are a beloved local spot known for our warm hospitality, fresh ingredients, and fusion of Zambian and international flavors.</p>
-                        <p>We offer dine-in, takeaway, and free delivery within Lusaka for orders above K150. Our mission is to make every meal feel like home.</p>
+                        <p>We specialize in <strong>shawarma, fresh cakes, and soft chapati</strong> – made with love daily. Our shawarma is marinated for hours, cakes are baked fresh, and chapati is rolled by hand. Whether you crave a quick wrap or a sweet treat, we deliver across Lusaka.</p>
+                        <p>We offer takeaway and free delivery within Lusaka for orders above K150. Our mission is to make every meal feel like home.</p>
                         <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> 14 Great East Road, Lusaka (near Arcades)</p>
                         <p><i class="fas fa-clock"></i> <strong>Hours:</strong> Mon-Sun 11am – 10pm</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" class="img-fluid rounded-4 shadow" alt="Restaurant interior">
+                    <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" class="img-fluid rounded-4 shadow" alt="Kitchen">
                 </div>
             </div>
         </div>
@@ -336,7 +337,7 @@
                     <div class="info-card">
                         <h4><i class="fab fa-whatsapp text-success"></i> Order via WhatsApp</h4>
                         <p>Click the button below to send us a message. We'll confirm your order and delivery time.</p>
-                        <a href="https://wa.me/260964173406?text=Hello%20Rashmy%27s%20Food%2C%20I%20want%20to%20place%20an%20order" class="btn btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        <a href="https://wa.me/260964173406?text=Hello%20Rashmy's%20Food%2C%20I%20want%20to%20place%20an%20order" class="btn btn-order" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
                         <hr>
                         <p><i class="fas fa-phone-alt"></i> <strong>Call us:</strong> <a href="tel:+260964173406">+260 964 173406</a></p>
                         <p><i class="fas fa-envelope"></i> <strong>Email:</strong> rashmysfood@example.com</p>
@@ -358,12 +359,12 @@
     <footer>
         <div class="container text-center">
             <p>&copy; 2025 Rashmy's Food. All rights reserved. | Designed by Moyo Web & AI Solutions</p>
-            <p><i class="fas fa-heart text-danger"></i> Serving Lusaka with love</p>
+            <p><i class="fas fa-heart text-danger"></i> Serving Lusaka – Shawarma, Cakes & Chapati made fresh daily.</p>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/260964173406?text=Hello%20Rashmy%27s%20Food%2C%20I%20want%20to%20place%20an%20order" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/260964173406?text=Hello%20Rashmy's%20Food%2C%20I%20want%20to%20place%20an%20order" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
